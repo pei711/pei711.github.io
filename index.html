@@ -77,7 +77,7 @@
     <div class="card">
       <div class="meta">核心项目 · Agent Harness</div>
       <h3><a href="https://pei711.github.io/CodeFlow-harness/" target="_blank" rel="noopener">CodeFlow-harness</a></h3>
-      <p>支持并发与多轮对话的本地代码智能体 Harness：Agent Loop（目标→规划→执行→验证→恢复）、EventLog + RunState 单一状态源、分层上下文治理与结构化压缩、Prompt Cache、Checkpoint / Resume 断点恢复、10 类故障恢复场景与工具调用治理（校验、风险分级、人工审批）。10,000 次请求 0 丢失 0 重复，端到端 P95 13.57s → 11.66s，输入 Token 消耗降低 26.44%。</p>
+      <p>面向多任务并发与长会话的本地代码智能体 Harness：asyncio 会话级队列（会话内保序、跨会话并行）、Git Worktree 并发写隔离、分层上下文治理与结构化压缩、语义向量 + BM25 双路召回（RRF 融合）、SRT Shell 沙箱、Checkpoint / Resume 断点恢复（10 类恢复场景、漂移识别率 100%）。4,160 次真实请求端到端 P95 13.57s → 11.66s、自动验收通过率 99.95%；SWE-bench Verified 50 任务解决率 32% → 46%；安全评测 90 次回放中未审批危险操作与工作区外写入均为 0。</p>
       <p style="margin-top:8px"><a href="https://github.com/pei711/CodeFlow-harness" target="_blank" rel="noopener">GitHub 仓库 →</a></p>
     </div>
     <div class="card">
