@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>张钧沛 · AI Agent 开发 — 个人求职站</title>
-<meta name="description" content="张钧沛，厦门大学通信工程本科在读，专注 AI Agent 开发。61 个开源 PR 被合并，54 个在 10k star 以上的项目。求职方向：AI Agent 工程 / Java 后端实习。">
+<meta name="description" content="张钧沛，厦门大学通信工程本科在读，专注 AI Agent 开发。63 个开源 PR 被合并，56 个在 10k star 以上的项目。求职方向：AI Agent 开发实习 / Java 后端开发。">
 <style>
   :root{
     --bg:#fafafa; --card:#ffffff; --ink:#111827; --sub:#4b5563; --line:#e5e7eb;
@@ -67,8 +67,8 @@
   </header>
 
   <div class="stats">
-    <div class="stat"><div class="num">61</div><div class="lbl">开源 PR 被合并</div></div>
-    <div class="stat"><div class="num">54</div><div class="lbl">位于 10k★ 以上项目</div></div>
+    <div class="stat"><div class="num">63</div><div class="lbl">开源 PR 被合并</div></div>
+    <div class="stat"><div class="num">56</div><div class="lbl">位于 10k★ 以上项目</div></div>
     <div class="stat"><div class="num">10+</div><div class="lbl">知名开源项目贡献</div></div>
   </div>
 
@@ -83,7 +83,7 @@
     <div class="card">
       <div class="meta">全栈项目 · Spring Boot + Vue</div>
       <h3><a href="https://github.com/pei711/linli-zhiying" target="_blank" rel="noopener">邻里智营（AI 智能经营中台）</a></h3>
-      <p>AI 驱动的本地生活与商家运营平台：Lua 脚本原子化秒杀库存扣减、Redis Stream 异步下单、Redisson 分布式锁 + MySQL 联合唯一索引保证订单幂等、Caffeine + Redis 两级缓存、LangChain4j + MCP 智能客服、Redis GEO 附近商户。</p>
+      <p>AI 驱动的本地生活与商家运营平台：Caffeine + Redis 两级缓存（布隆过滤器与空值缓存防穿透、互斥锁重建热点 Key、随机 TTL 防雪崩）、Lua 脚本原子化秒杀库存扣减、Redis Stream 异步下单、Redisson 分布式锁 + MySQL 联合唯一索引保证订单幂等、LangChain4j + MCP 智能客服（MCP Server 提供店铺与优惠券查询接口）、Redis GEO 附近商户。</p>
       <p style="margin-top:8px"><a href="https://github.com/pei711/linli-zhiying" target="_blank" rel="noopener">GitHub 仓库 →</a></p>
     </div>
   </section>
@@ -91,10 +91,10 @@
   <section>
     <h2>开源贡献（精选）</h2>
     <ul class="pr">
-      <li><span class="stars">161k★</span><span><b>Dify</b> — <a href="https://github.com/langgenius/dify/pull/43796" target="_blank" rel="noopener">保持重放时工具调用 ID 稳定</a></span></li>
+      <li><span class="stars">161k★</span><span><b>Dify</b> — <a href="https://github.com/langgenius/dify/pull/43796" target="_blank" rel="noopener">修复历史工具调用 ID 不稳定问题，补充回归测试</a></span></li>
       <li><span class="stars">115k★</span><span><b>claude-mem</b> — <a href="https://github.com/thedotmack/claude-mem/pull/4939" target="_blank" rel="noopener">搜索超时错误提示与日志记录</a></span></li>
       <li><span class="stars">93k★</span><span><b>OpenHands</b> — <a href="https://github.com/OpenHands/OpenHands/pull/17966" target="_blank" rel="noopener">展示具体的 MCP 请求头校验错误</a></span></li>
-      <li><span class="stars">79k★</span><span><b>Headroom</b> — <a href="https://github.com/headroomlabs-ai/headroom/pull/4494" target="_blank" rel="noopener">批量压缩中强制执行 role、mutable 与 cache zone 守卫</a></span></li>
+      <li><span class="stars">79k★</span><span><b>Headroom</b> — <a href="https://github.com/headroomlabs-ai/headroom/pull/4494" target="_blank" rel="noopener">统一批量压缩保护校验，避免受保护消息误压缩</a></span></li>
       <li><span class="stars">50k★</span><span><b>nanobot</b> — <a href="https://github.com/HKUDS/nanobot/pull/6019" target="_blank" rel="noopener">支持连接无工具能力的 MCP 服务</a></span></li>
       <li><span class="stars">39k★</span><span><b>CopilotKit</b> — <a href="https://github.com/CopilotKit/CopilotKit/pull/7996" target="_blank" rel="noopener">按 transcript 顺序配对复用的工具调用 ID</a></span></li>
       <li><span class="stars">31k★</span><span><b>GPT Researcher</b> — <a href="https://github.com/assafelovic/gpt-researcher/pull/2268" target="_blank" rel="noopener">Bing 搜索应用 query_domains 并加固载荷解析</a></span></li>
@@ -107,9 +107,9 @@
   <section>
     <h2>技术栈</h2>
     <div class="skills">
-      <div class="skill"><b>AI Agent 开发</b><span>Agent Harness、上下文工程、RAG、MCP、多 Agent 协作</span></div>
-      <div class="skill"><b>Python</b><span>Agent 框架与工具链开发</span></div>
-      <div class="skill"><b>Java</b><span>Spring Boot、MySQL、Redis、Kafka</span></div>
+      <div class="skill"><b>AI Agent 工程与评测</b><span>Tool Calling / MCP、上下文治理、对照实验与自动验收、任务级回归评测</span></div>
+      <div class="skill"><b>Java / Python</b><span>熟练 Java 与 Python，熟悉并发编程、集合与数据结构、类加载机制；Spring Boot 后端开发</span></div>
+      <div class="skill"><b>MySQL / Redis / Kafka</b><span>MySQL 事务、索引与锁；Redis 数据结构、持久化与高可用；Kafka 消费者组、Offset 管理、重试与死信队列</span></div>
       <div class="skill"><b>全栈与运维</b><span>Vue、Docker、Nginx、Linux</span></div>
     </div>
   </section>
