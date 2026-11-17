@@ -81,10 +81,10 @@
       <p style="margin-top:8px"><a href="https://github.com/pei711/CodeFlow-harness" target="_blank" rel="noopener">GitHub 仓库 →</a></p>
     </div>
     <div class="card">
-      <div class="meta">全栈项目 · Spring Boot + Vue</div>
-      <h3><a href="https://github.com/pei711/linli-zhiying" target="_blank" rel="noopener">邻里智营（AI 智能经营中台）</a></h3>
-      <p>AI 驱动的本地生活与商家运营平台：Caffeine + Redis 两级缓存（布隆过滤器与空值缓存防穿透、互斥锁重建热点 Key、随机 TTL 防雪崩）、Lua 脚本原子化秒杀库存扣减、Redis Stream 异步下单、Redisson 分布式锁 + MySQL 联合唯一索引保证订单幂等、LangChain4j + MCP 智能客服（MCP Server 提供店铺与优惠券查询接口）、Redis GEO 附近商户。</p>
-      <p style="margin-top:8px"><a href="https://github.com/pei711/linli-zhiying" target="_blank" rel="noopener">GitHub 仓库 →</a></p>
+      <div class="meta">全栈项目 · Spring Boot + Kafka + LangChain4j</div>
+      <h3><a href="https://github.com/pei711/linli-pharmacy" target="_blank" rel="noopener">邻里药房</a></h3>
+      <p>社区药房双边平台：C 端附近药房检索、药品预约与到店核销，B 端门店工作台、批次库存与 AI 经营助手。批次级库存账本（可用 / 活动预留 / 订单预留 / 隔离四账记账、数据库约束保证账实恒等）与 FEFO 效期出库；预约链路采用限流 → Redis Lua 原子预占 → MySQL + Outbox 落账 → Kafka 异步建单，1000 用户抢 100 件库存压测 100 单成功、限流误杀 0、对账全一致；9 项故障注入验收电池（Kafka 重复消费、Offset 中断、死信重投、MySQL 中断等）全部通过；LangChain4j Tool Calling 经营 Agent 工具只读且按门店隔离，20 条评估全通过。</p>
+      <p style="margin-top:8px"><a href="https://github.com/pei711/linli-pharmacy" target="_blank" rel="noopener">GitHub 仓库 →</a>　<a href="http://111.230.167.35/" target="_blank" rel="noopener">在线演示 →</a></p>
     </div>
   </section>
 
